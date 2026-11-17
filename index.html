@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кофейня «Зерна» — Главная</title>
+  <meta name="description"
+    content="Кофейня «Зерна»: эспрессо от 120 ₽, капучино, латте и чай. Ждём вас ежедневно с 8:00 до 22:00.">
+  <!-- Теги OpenGraph для соцсетей -->
+  <meta property="og:title" content="Кофейня «Зерна» — свежеобжаренный кофе и уютная атмосфера">
+  <meta property="og:description"
+    content="Эспрессо от 120 ₽, капучино, латте и чай.Каждый будний день с 8:00 до 10:00 — второй кофе в подарок!">
+  <meta property="og:image" content="./img/espresso.jpg">
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Кофейня «Зерна»</a>
+
+    <nav class="menu" id="menu" aria-label="Основное меню">
+      <a href="index.html" aria-current="page">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="#">
+        <img src="./img/profile_icon.svg" alt="Профиль пользователя" class="profile-icon">
+      </a>
+    </nav>
+
+    <div class="header-tools">
+      <button id="themeToggle" type="button" aria-pressed="false" aria-label="Тёмная тема">Тёмная тема</button>
+
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu"
+        aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <main class="all_content">
+    <h1 class="content-title">Кофейня «Зерна» — наше меню</h1>
+
+    <section class="main-content" aria-label="Меню напитков">
+      <div class="cards" role="list">
+        <article class="card" role="listitem">
+          <img src="./img/espresso.jpg" alt="Чашка свежесваренного эспрессо">
+          <h2>Эспрессо</h2>
+          <p>120 ₽</p>
+        </article>
+        <article class="card" role="listitem">
+          <img src="./img/capuccino.jpg" alt="Чашка капучино с молочной пенкой">
+          <h2>Капучино</h2>
+          <p>180 ₽</p>
+        </article>
+        <article class="card" role="listitem">
+          <img src="./img/latte.jpg" alt="Высокий стакан латте">
+          <h2>Латте</h2>
+          <p>200 ₽</p>
+        </article>
+        <article class="card" role="listitem">
+          <img src="./img/tea.jpg" alt="Чашка ароматного листового чая">
+          <h2>Чай</h2>
+          <p>100 ₽</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sale" aria-labelledby="sale-title">
+      <h2 id="sale-title">Акция</h2>
+      <p>Каждый будний день с 8:00 до 10:00 — второй кофе в подарок!</p>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Кофейня «Зерна»</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+/*светлая тема*/
+:root {
+    --bg: #fbf7f2;
+    --text: #2b1d16;
+    --header-bg: #4a3226;
+    --header-text: #ffffff;
+    --surface: #ffffff;
+    --surface-alt: #f5ebe0;
+    --border: #eadfd3;
+    --accent: #a0522d;
+    --footer-bg: #2b1d16;
+    --footer-text: #d9c7b8;
+}
+
+/*тёмная тема*/
+body.theme-dark {
+    --bg: #1c1612;
+    --text: #eee3d8;
+    --header-bg: #120d0a;
+    --header-text: #f5ebe0;
+    --surface: #2a211b;
+    --surface-alt: #33281f;
+    --border: #45362b;
+    --accent: #e0a370;
+    --footer-bg: #0d0907;
+    --footer-text: #bfae9f;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.header {
+    padding: 20px 200px;
+    background: var(--header-bg);
+    color: var(--header-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#themeToggle {
+    background: none;
+    color: #d9c7b8;
+}
+
+.header-tools {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--header-text);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.logo {
+    color: var(--header-text);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 8px;
+}
+
+.menu a {
+    color: var(--header-text);
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.menu-profile {
+    display: flex;
+    align-items: center;
+}
+
+.menu .profile-icon {
+    max-width: none;
+}
+
+.all_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 20px 200px;
+    flex: 1;
+}
+
+.content-title {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main-content {
+    width: 70%;
+    padding: 0 20px;
+}
+
+.sale {
+    width: 30%;
+    padding: 20px;
+    background-color: var(--surface-alt);
+    border-radius: 12px;
+    align-self: flex-start;
+}
+
+.sale h2 {
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    margin-bottom: 0;
+    font-size: 1.17em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    width: 30%;
+    padding: 20px 15px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card p {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu.menu-open {
+        display: flex;
+    }
+
+    .all_content {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .content-title {
+        padding: 0 10px;
+    }
+
+    .main-content,
+    .sale {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header,
+    .all_content {
+        padding: 20px;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+    body {
+        font-size: 18px;
+    }
+
+    .header,
+    .all_content {
+        padding: 30px 100px;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 20px;
+    }
+
+    .header,
+    .all_content {
+        padding: 40px calc(50% - 800px);
+    }
+
+    .card {
+        width: calc(25% - 12px);
+    }
+}

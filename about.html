@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас — Кофейня «Зерна»</title>
+  <meta name="description"
+    content="История кофейни «Зерна»: собственная обжарка, зерно из Эфиопии, Колумбии и Бразилии, команда профессиональных бариста.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Кофейня «Зерна»</a>
+
+    <nav class="menu" id="menu" aria-label="Основное меню">
+      <a href="index.html">Главная</a>
+      <a href="about.html" aria-current="page">О нас</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="#">
+        <img src="./img/profile_icon.svg" alt="Профиль пользователя" class="profile-icon">
+      </a>
+    </nav>
+
+    <div class="header-tools">
+      <button id="themeToggle" type="button" aria-pressed="false" aria-label="Тёмная тема">Тёмная тема</button>
+
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu"
+        aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <main class="all_content">
+    <h1 class="content-title">О нас</h1>
+
+    <section class="main-content about">
+      <!-- ОШИБКА 1: второй заголовок h1 на странице вместо h2 -->
+      <h1>Наша история</h1>
+      <p>«Зерна» появились в 2019 году как маленький кофейный уголок на три столика.
+        Мы хотели, чтобы в нашем районе было место, где кофе варят из свежего зерна.</p>
+      <p>Сегодня у нас просторный зал, собственная обжарка и команда из шести бариста.
+        Каждую неделю мы пробуем новые сорта из Эфиопии, Колумбии и Бразилии.</p>
+      <!-- ОШИБКА 2: пустой атрибут alt у контентного изображения -->
+      <img src="./img/interior.webp" alt="">
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Кофейня «Зерна»</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

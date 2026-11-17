@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ОШИБКА 3: слишком длинный title (более 100 символов при норме до 60) -->
+  <title>Контакты кофейни «Зерна» — адрес в Москве, телефон, часы работы, как добраться пешком, схема проезда и
+    бронирование столиков онлайн</title>
+  <!-- ОШИБКА 4: отсутствует мета-тег meta name="description" -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Кофейня «Зерна»</a>
+
+    <nav class="menu" id="menu" aria-label="Основное меню">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html" aria-current="page">Контакты</a>
+      <a href="#">
+        <img src="./img/profile_icon.svg" alt="Профиль пользователя" class="profile-icon">
+      </a>
+    </nav>
+
+    <div class="header-tools">
+      <button id="themeToggle" type="button" aria-pressed="false" aria-label="Тёмная тема">Тёмная тема</button>
+
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu"
+        aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <main class="all_content">
+    <h1 class="content-title">Контакты</h1>
+
+    <section class="main-content contacts" aria-labelledby="find-title">
+      <h2 id="find-title">Как нас найти</h2>
+      <div>
+        <p><strong>Адрес:</strong> г. Москва, ул. Кофейная, 12</p>
+        <p><strong>Телефон:</strong> <a href="tel:+79990009999">+7 (999) 000-99-99</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:zerna@mail.ru">zerna@mail.ru</a></p>
+      </div>
+      <img src="./img/map.png" alt="Схема проезда к кофейне «Зерна»">
+    </section>
+
+    <section class="sale" aria-labelledby="hours-title">
+      <h2 id="hours-title">Часы работы</h2>
+      <p>Пн–Пт: 8:00 – 22:00</p>
+      <p>Сб–Вс: 9:00 – 23:00</p>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Кофейня «Зерна»</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
